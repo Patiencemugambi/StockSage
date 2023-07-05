@@ -22,6 +22,8 @@ a{
     display: flex;
     justify-content: space-between;
     margin: 2%;
+    text-align: center;
+
 }
 
 .welcomel h1{
@@ -35,7 +37,6 @@ a{
 .stocksage{
     position: relative;
     display: inline-block;
-    margin-left: 30%;
 }
 
 .stocksaget::before{
@@ -109,7 +110,7 @@ input[type="checkbox"]{
     color: rgb(121, 116, 116);
     font-size: var(--fs-500);
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
     /* display: flex; */
 
@@ -146,4 +147,27 @@ input[type="checkbox"]{
 .loginimgs img{
     margin: 0;
 }
+
+@media (max-width: 1024px) {
+    .loginimgs img {
+      display: none;
+    }
+  
+    .login,
+    .welcomel,
+    .loginimgs {
+      text-align: center;
+      margin-left: 50px;
+    }    
+
+    .stocksage{
+        position: relative;
+        display: inline-block;
+        margin-left: 0%;
+    }
+
+
+
+
+  }
 
