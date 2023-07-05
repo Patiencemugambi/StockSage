@@ -1,6 +1,11 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+a{
+    text-decoration: none;
+}
+
 :root{
     --fs-xl: 5rem;
     --fs-600: 3.5rem;
