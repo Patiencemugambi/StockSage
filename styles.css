@@ -65,7 +65,7 @@ input{
 }
 
 input:hover{
-    box-shadow: 1px 1px 3px rgb(223, 52, 223);
+    box-shadow: 2px 1px 3px rgb(209, 151, 209);
 
 }
 
@@ -84,6 +84,8 @@ input::placeholder {
 input[type="checkbox"]{
     width: auto;
     height: auto;
+    box-shadow: none;
+    cursor: pointer;
     /* margin-left: 10%; */
 }
 
@@ -131,3 +133,12 @@ input[type="checkbox"]{
 #login-form p{
     text-align: center;
 }
+
+.loginimgs{
+    margin-top: 30px;
+    text-align: center;
+}
+.loginimgs img{
+    margin: 0;
+}
+
