@@ -26,7 +26,7 @@ a{
 
 }
 
-.welcomel h1{
+h1{
     font-size: var(--fs-xl);
     font-weight: var(--fw--light);
     text-shadow: 2px 2px 4px rgba(167, 71, 144, 0.5);
@@ -71,7 +71,7 @@ input{
 }
 
 input:hover{
-    box-shadow: 2px 1px 3px rgb(209, 151, 209);
+    box-shadow: 0 0 5px 2px rgba(110, 31, 110, 0.5);
 
 }
 
