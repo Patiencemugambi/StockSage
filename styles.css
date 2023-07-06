@@ -171,3 +171,24 @@ input[type="checkbox"]{
 
   }
 
+
+@media (max-width: 768px) {
+    input{
+        width: 500px;
+        height: 40px;
+        padding: 4px;
+        border-radius: 10px;
+    }
+
+    #login-form{
+        margin: 0;
+    }
+
+    .welcomel{
+        margin: 0;
+    }
+    
+     
+  }
+  
+
