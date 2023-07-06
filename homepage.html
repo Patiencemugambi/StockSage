@@ -6,12 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StockSage</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b4cd467e5a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="homepage1">
+        
+    <div class="menu">
     <div class="stocksage">
-        <h1 class="stocksaget">StockSage</h1>
+        <h1 class="stocksaget" id="stocksageh1">StockSage</h1>
     </div>
 
+    <nav class="left-nav">
+
+        <div class="profile-details">
+
+            <img src="images/Profile Photo.jpeg" alt="" height="63px" width="50px">
+
+            <div>
+            <p id="full-name">p</p>
+            <p id="role">s</p>
+            </div>
+
+            <div>
+                <a href="#stock-alerts" data-badge="5"><i class="fa fa-bell" style="color: #6e1f6e;"></i></a>
+            </div>
+
+        </div>
+
+        <div class="homepage-menu">
+            <ul>
+            <li><a href="#dashboard"> <i class="fa-solid fa-bars" style="color: #6e1f6e;"></i> Dashboard</a></li>
+            <li><a href="#add-stock-item"><i class="fa-solid fa-plus" style="color: #6e1f6e;"></i> Add Stock Item</a></li>
+            <li><a href="manage-stock-item"><i class="fa fa-list-alt" style="color: #6e1f6e;"></i> Manage Stock Items</a></li>
+            <li><a href="#stock-alerts"><i class="fa fa-bell" style="color: #6e1f6e;"></i> Stock Alerts</a></li>
+            <li><a href="#user-settings"><i class="fa fa-cog" style="color: #6e1f6e;"></i> User Settings</a></li>
+            </li>
+
+        </ul>
+        <button  class="logout" id="margin-bottom-user-settings" >Logout</button>
+
+        </div>
+
+    </nav>
+
+    </div>
+
+    <div class="homepagebody">
+        
+        <div>
+           <input type="search" id="search-bar" placeholder="Search" />
+        </div>
+
+    <div>
+        <h2>Welcome to <span style="color: rgb(110, 31, 110);">StockSage</span></h2>
+        <h3>Empowering Efficient Inventory Management</h3>
+    </div>
+
+
+    </div>
+    
     
 
     <script src="script.js"></script>

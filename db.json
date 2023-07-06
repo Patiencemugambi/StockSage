@@ -1,0 +1,39 @@
+[
+    {
+      "email": "alice@gmail.com",
+      "name": "Alice Marikaba",
+      "full_name": "Alice Wanjiru Marikaba",
+      "role": "Sales Manager"
+    },
+    {
+      "email": "bob@gmail.com",
+      "name": "Bob Smith",
+      "full_name": "Robert Smith",
+      "role": "Customer Support"
+    },
+    {
+      "email": "linet@gmail.com",
+      "name": "Linet Makena",
+      "full_name": "Linet Wanjiru Makena",
+      "role": "Marketing Manager"
+    },
+    {
+      "email": "willy@gmail.com",
+      "name": "Willy Mutung'a",
+      "full_name": "Willy Mutung'a Mwangi",
+      "role": "Technical Support"
+    },
+    {
+      "email": "kimathi@gmail.com",
+      "name": "Kimathi Afrikanah",
+      "full_name": "Kimathi Njuguna Afrikanah",
+      "role": "CEO"
+    },
+    {
+      "email": "jane@gmail.com",
+      "name": "Jane Doe",
+      "full_name": "Jane Doe Doe",
+      "role": "Admin"
+    }
+  ]
+  
