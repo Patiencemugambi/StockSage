@@ -39,7 +39,13 @@ loginForm.addEventListener('submit', function(event) {
   // Perform authentication/login logic here
   // Send the form data to a server for verification
 
-  alert('Login successful!');
+//   alert('Login successful!');
+
   loginForm.reset();
+
+  window.location.href = 'homepage.html';
+
+
+
 });
 
