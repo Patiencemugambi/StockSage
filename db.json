@@ -1,82 +1,15 @@
 {
-    "employees": [
+    "stockItems": [
       {
-        "email": "alicemarikaba@gmail.com",
-        "name": "Alice Marikaba",
-        "full_name": "Alice Wanjiru Marikaba",
-        "role": "Sales Manager"
+        "itemName": "Item 1",
+        "quantity": 10,
+        "price": 10.00
       },
       {
-        "email": "bobkubasu@gmail.com",
-        "name": "Bob Kubasu",
-        "full_name": "Robert Smith",
-        "role": "Customer Support"
-      },
-      {
-        "email": "linetmakena@gmail.com",
-        "name": "Linet Makena",
-        "full_name": "Linet Wanjiru Makena",
-        "role": "Marketing Manager"
-      },
-      {
-        "email": "willymwangi@gmail.com",
-        "name": "Willy Mutung'a",
-        "full_name": "Willy Mutung'a Mwangi",
-        "role": "Technical Support"
-      },
-      {
-        "email": "kimathinjuguna@gmail.com",
-        "name": "Kimathi Afrikanah",
-        "full_name": "Kimathi Njuguna Afrikanah",
-        "role": "CEO"
-      },
-      {
-        "email": "janetkanana@gmail.com",
-        "name": "Jane Kanana",
-        "full_name": "Jane Kanana Samaoei",
-        "role": "Admin"
+        "itemName": "Item 2",
+        "quantity": 20,
+        "price": 20.00
       }
-    ],
-    "stockItems": {
-      "stockItems": [
-        {
-          "itemName": "Item 1",
-          "quantity": 10,
-          "price": 10.00
-        },
-        {
-          "itemName": "Item 2",
-          "quantity": 20,
-          "price": 20.00
-        },
-        {
-          "itemName": "Item 3",
-          "quantity": 30,
-          "price": 30.00
-        },
-        {
-          "itemName": "Item 4",
-          "quantity": 40,
-          "price": 40.00
-        },
-        {
-          "itemName": "Item 5",
-          "quantity": 50,
-          "price": 50.00
-        }
-      ],
-      "stockAlerts": [
-        {
-          "itemName": "Item 1",
-          "quantity": 5,
-          "alertType": "Low Stock"
-        },
-        {
-          "itemName": "Item 2",
-          "quantity": 10,
-          "alertType": "Zero Stock"
-        }
-      ]
-    }
+    ]
   }
   
