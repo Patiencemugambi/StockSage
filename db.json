@@ -1,7 +1,7 @@
 {
     "stockItems": [
       {
-        "itemName": "Item 1",
+        "itemName": "Chairs",
         "quantity": 10,
         "price": "Ksh 12.34"
       },
@@ -83,7 +83,7 @@
     ],
     "stock_alerts": [
       {
-        "item_name": "Item 1",
+        "item_name": "Chairs",
         "quantity": 10,
         "alert_type": "Low"
       },

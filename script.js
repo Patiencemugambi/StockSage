@@ -144,3 +144,28 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .catch(error => console.error(error));
 });
+
+
+
+
+///////
+
+ // Get the search input element
+ const searchBar = document.getElementById('search-bar');
+  
+ // Add event listener for input changes
+ searchBar.addEventListener('input', function() {
+   const searchTerm = searchBar.value.toLowerCase();
+   const rows = document.querySelectorAll('#manage-stock-items-table tbody tr');
+   
+   rows.forEach(function(row) {
+     const itemName = row.querySelector('td:first-child').textContent.toLowerCase();
+     
+     // Show/hide rows based on the search term
+     if (itemName.includes(searchTerm)) {
+       row.style.display = '';
+     } else {
+       row.style.display = 'none';
+     }
+   });
+ });
