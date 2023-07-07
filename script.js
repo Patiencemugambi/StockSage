@@ -84,3 +84,63 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .catch(error => console.error(error));
 });
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   fetch("db.json")
+//     .then(response => response.json())
+//     .then(data => {
+//       var stockAlerts = data.stock_alerts;
+
+//       // Loop through the stock alerts and append them to the table
+//       stockAlerts.forEach(function(alert) {
+//         var itemName = alert.item_name;
+//         var quantity = alert.quantity;
+//         var alertType = alert.alert_type;
+
+//         var row = document.createElement("tr");
+//         row.innerHTML = `
+//           <td>${itemName}</td>
+//           <td>${quantity}</td>
+//           <td>${alertType}</td>
+//         `;
+
+//         document.getElementById("stock-alerts-table").getElementsByTagName("tbody")[0].appendChild(row);
+//       });
+//     })
+//     .catch(error => console.error(error));
+// });
+
+
+
+
+//
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("db.json")
+    .then(response => response.json())
+    .then(data => {
+      var stockItems = data.stockItems;
+      var stockAlerts = data.stock_alerts;
+
+      // Loop through the stock alerts and append them to the table
+      stockAlerts.forEach(function(alert) {
+        var itemName = alert.item_name;
+        var alertQuantity = alert.quantity;
+        var alertType = alert.alert_type;
+
+        // Find the corresponding stock item
+        var stockItem = stockItems.find(item => item.itemName === itemName);
+        var stockQuantity = stockItem ? stockItem.quantity : 0;
+
+        var row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${itemName}</td>
+          <td>${stockQuantity}</td>
+          <td>${alertType}</td>
+        `;
+
+        document.getElementById("stock-alerts-table").getElementsByTagName("tbody")[0].appendChild(row);
+      });
+    })
+    .catch(error => console.error(error));
+});

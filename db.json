@@ -3,12 +3,164 @@
       {
         "itemName": "Item 1",
         "quantity": 10,
-        "price": 10.00
+        "price": "Ksh 12.34"
       },
       {
         "itemName": "Item 2",
+        "quantity": 5,
+        "price": "Ksh 45.67"
+      },
+      {
+        "itemName": "Item 3",
         "quantity": 20,
-        "price": 20.00
+        "price": "Ksh 23.45"
+      },
+      {
+        "itemName": "Item 4",
+        "quantity": 3,
+        "price": "Ksh 67.89"
+      },
+      {
+        "itemName": "Item 5",
+        "quantity": 1,
+        "price": "Ksh 10.99"
+      },
+      {
+        "itemName": "Item 6",
+        "quantity": 0,
+        "price": "Ksh 70.0"
+      },
+      {
+        "itemName": "Item 7",
+        "quantity": 0,
+        "price": "Ksh 23.1"
+      },
+      {
+        "itemName": "Item 8",
+        "quantity": 9,
+        "price": "Ksh 31.25"
+      },
+      {
+        "itemName": "Item 9",
+        "quantity": 160,
+        "price": "Ksh 17.50"
+      },
+      {
+        "itemName": "Item 10",
+        "quantity": 12,
+        "price": "Ksh 14.99"
+      },
+      {
+        "itemName": "Item 11",
+        "quantity": 4,
+        "price": "Ksh 9.99"
+      },
+      {
+        "itemName": "Item 12",
+        "quantity": 2,
+        "price": "Ksh 5.99"
+      },
+      {
+        "itemName": "Item 13",
+        "quantity": 7,
+        "price": "Ksh 8.75"
+      },
+      {
+        "itemName": "Item 14",
+        "quantity": 14,
+        "price": "Ksh 22.50"
+      },
+      {
+        "itemName": "Item 15",
+        "quantity": 6,
+        "price": "Ksh 11.99"
+      },
+      {
+        "itemName": "Item 16",
+        "quantity": 10,
+        "price": "Ksh 19.99"
+      }
+    ],
+    "stock_alerts": [
+      {
+        "item_name": "Item 1",
+        "quantity": 10,
+        "alert_type": "Low"
+      },
+      {
+        "item_name": "Item 2",
+        "quantity": 5,
+        "alert_type": "Critical"
+      },
+      {
+        "item_name": "Item 3",
+        "quantity": 20,
+        "alert_type": "Medium"
+      },
+      {
+        "item_name": "Item 4",
+        "quantity": 3,
+        "alert_type": "Critical"
+      },
+      {
+        "item_name": "Item 5",
+        "quantity": 1,
+        "alert_type": "Critical"
+      },
+      {
+        "item_name": "Item 6",
+        "quantity": 0,
+        "alert_type": "Out of stock"
+      },
+      {
+        "item_name": "Item 7",
+        "quantity": 0,
+        "alert_type": "Out of stock"
+      },
+      {
+        "item_name": "Item 8",
+        "quantity": 9,
+        "alert_type": "Low"
+      },
+      {
+        "item_name": "Item 9",
+        "quantity": 160,
+        "alert_type": "Oversstocked"
+      },
+      {
+        "item_name": "Item 10",
+        "quantity": 12,
+        "alert_type": "Medium"
+      },
+      {
+        "item_name": "Item 11",
+        "quantity": 4,
+        "alert_type": "Critical"
+      },
+      {
+        "item_name": "Item 12",
+        "quantity": 2,
+        "alert_type": "Critical"
+      },
+      {
+        "item_name": "Item 13",
+        "quantity": 7,
+        "alert_type": "Low"
+      },
+      {
+        "item_name": "Item 14",
+        "quantity": 14,
+        "alert_type": "Medium"
+      },
+      {
+        "item_name": "Item 15",
+        "quantity": 6,
+        "alert_type": "Low"
+      },
+      {
+        "item_name": "Item 16",
+        "quantity": 10,
+        "alert_type": "Medium"
       }
     ]
   }
