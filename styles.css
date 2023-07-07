@@ -19,7 +19,7 @@ li{
     --fs-600: 3.5rem;
     --fs-500: 2.25rem;
     --fs-400: 1.5rem;
-    --fs-300: 1rem;
+    --fs-300: 1.2rem;
 
 
     --fw-bold: 700;
@@ -122,6 +122,7 @@ input[type="checkbox"]{
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 
+    
     /* display: flex; */
 
 }
@@ -220,6 +221,11 @@ h3{
 
 .homepage1{
     display: flex;
+  /* position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1; */
+
     /* justify-content: space-around; */
     /* justify-content: space-between; */
 }
@@ -327,7 +333,7 @@ h3{
 
 .left-nav{
     background-color: rgba(230, 197, 230, 0.233);
-    height: 78%;
+    height: 625px;
     margin-left: 15px;
     border-radius: 10px;
 }
@@ -341,8 +347,124 @@ h3{
 }
 
 
+/* *** */
+#manage-stock-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 60px;
+  }
+  
+  #manage-stock-item h2 {
+    font-size: var(--fs-500);
+    font-weight: var(--fw--light);
+    margin-top: 0;
+    color: rgb(121, 116, 116);
+  }
+  
+  #manage-stock-item table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(110, 31, 110);
+    
+  }
+  
+  #manage-stock-item table th,
+  #manage-stock-item table td {
+    border: 1px solid rgb(110, 31, 110);
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  #manage-stock-item table th {
+    background-color: rgb(110, 31, 110);
+    color: white;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-light);
+
+
+  }
+
+  #manage-stock-item table td{
+    font-size: var(--fs-300);
+
+  }
+  
+  #manage-stock-item table a:hover {
+    color: rgba(189, 21, 21, 0.877);
+
+  }
+
+  #add-stock-item button{
+    width: 400px;
+    height: 45px;
+    border: 1px solid rgb(110, 31, 110);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(121, 116, 116);
+    font-size: var(--fs-400);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  #add-stock-item button:hover{
+    width: 440px;
+    height: 45px;
+    border: 1px solid rgb(110, 31, 110);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(110, 31, 110);
+    color: rgb(202, 188, 188);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
 
 
 
-
-
+/* *** */
+#stock-alerts {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 60px;
+  }
+  
+  #stock-alerts h2 {
+    font-size: var(--fs-500);
+    font-weight: var(--fw--light);
+    margin-top: 0;
+    color: rgb(121, 116, 116);
+  }
+  
+  #stock-alerts table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(110, 31, 110);
+  }
+  
+  #stock-alerts table th,
+  #stock-alerts table td {
+    border: 1px solid rgb(110, 31, 110);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #stock-alerts table th {
+    background-color: rgb(110, 31, 110);
+    color: white;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-light);
+  }
+  
+  #stock-alerts table td {
+    font-size: var(--fs-300);
+  }
+  
+  #stock-alerts table a:hover {
+    color: rgba(189, 21, 21, 0.877);
+  }
+  
+  /* *** */
+  

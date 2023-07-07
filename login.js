@@ -10,5 +10,5 @@ loginForm.addEventListener('submit', function(event) {
   // You can send the form data to a server for verification
 
   loginForm.reset();
-  window.location.href = 'homepage.html'; // Redirect to homepage.html after successful login
+  window.location.href = 'index.html'; // Redirect to homepage.html after successful login
 });

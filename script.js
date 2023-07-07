@@ -21,5 +21,17 @@ xhr.send();
 
 // Redirect to the homepage if the user is logged in
 if (email) {
-  window.location.href = "homepage.html";
+  window.location.href = "index.html";
 }
+
+function confirmLogout() {
+  var logoutConfirmation = window.confirm('Are you sure you want to log out?');
+  if (logoutConfirmation) {
+    window.location.href = 'login.html';
+  }
+}
+
+const logoutButton = document.getElementById('margin-bottom-user-settings');
+logoutButton.onclick = confirmLogout;
+
+

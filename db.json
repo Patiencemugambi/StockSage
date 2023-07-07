@@ -1,39 +1,82 @@
-[
-    {
-      "email": "alice@gmail.com",
-      "name": "Alice Marikaba",
-      "full_name": "Alice Wanjiru Marikaba",
-      "role": "Sales Manager"
-    },
-    {
-      "email": "bob@gmail.com",
-      "name": "Bob Smith",
-      "full_name": "Robert Smith",
-      "role": "Customer Support"
-    },
-    {
-      "email": "linet@gmail.com",
-      "name": "Linet Makena",
-      "full_name": "Linet Wanjiru Makena",
-      "role": "Marketing Manager"
-    },
-    {
-      "email": "willy@gmail.com",
-      "name": "Willy Mutung'a",
-      "full_name": "Willy Mutung'a Mwangi",
-      "role": "Technical Support"
-    },
-    {
-      "email": "kimathi@gmail.com",
-      "name": "Kimathi Afrikanah",
-      "full_name": "Kimathi Njuguna Afrikanah",
-      "role": "CEO"
-    },
-    {
-      "email": "jane@gmail.com",
-      "name": "Jane Doe",
-      "full_name": "Jane Doe Doe",
-      "role": "Admin"
+{
+    "employees": [
+      {
+        "email": "alicemarikaba@gmail.com",
+        "name": "Alice Marikaba",
+        "full_name": "Alice Wanjiru Marikaba",
+        "role": "Sales Manager"
+      },
+      {
+        "email": "bobkubasu@gmail.com",
+        "name": "Bob Kubasu",
+        "full_name": "Robert Smith",
+        "role": "Customer Support"
+      },
+      {
+        "email": "linetmakena@gmail.com",
+        "name": "Linet Makena",
+        "full_name": "Linet Wanjiru Makena",
+        "role": "Marketing Manager"
+      },
+      {
+        "email": "willymwangi@gmail.com",
+        "name": "Willy Mutung'a",
+        "full_name": "Willy Mutung'a Mwangi",
+        "role": "Technical Support"
+      },
+      {
+        "email": "kimathinjuguna@gmail.com",
+        "name": "Kimathi Afrikanah",
+        "full_name": "Kimathi Njuguna Afrikanah",
+        "role": "CEO"
+      },
+      {
+        "email": "janetkanana@gmail.com",
+        "name": "Jane Kanana",
+        "full_name": "Jane Kanana Samaoei",
+        "role": "Admin"
+      }
+    ],
+    "stockItems": {
+      "stockItems": [
+        {
+          "itemName": "Item 1",
+          "quantity": 10,
+          "price": 10.00
+        },
+        {
+          "itemName": "Item 2",
+          "quantity": 20,
+          "price": 20.00
+        },
+        {
+          "itemName": "Item 3",
+          "quantity": 30,
+          "price": 30.00
+        },
+        {
+          "itemName": "Item 4",
+          "quantity": 40,
+          "price": 40.00
+        },
+        {
+          "itemName": "Item 5",
+          "quantity": 50,
+          "price": 50.00
+        }
+      ],
+      "stockAlerts": [
+        {
+          "itemName": "Item 1",
+          "quantity": 5,
+          "alertType": "Low Stock"
+        },
+        {
+          "itemName": "Item 2",
+          "quantity": 10,
+          "alertType": "Zero Stock"
+        }
+      ]
     }
-  ]
+  }
   
