@@ -194,7 +194,6 @@ form.addEventListener('submit', function(event) {
   console.log('Quantity:', quantity);
   console.log('Price:', price);
 
-  // Clear the form fields
   form.reset();
 });
 
