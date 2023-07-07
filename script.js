@@ -177,7 +177,6 @@ document.addEventListener("DOMContentLoaded", function() {
  // Get the form element
 const form = document.getElementById('stock-item-form');
 
-// Add event listener to the form submit button
 form.addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form submission
 
@@ -196,5 +195,7 @@ form.addEventListener('submit', function(event) {
 
   form.reset();
 });
+
+
 
 

@@ -465,9 +465,7 @@ h3{
     font-size: var(--fs-300);
   }
   
-  #stock-alerts table a:hover {
-    color: rgba(189, 21, 21, 0.877);
-  }
+
   
   /* *** */
   
