@@ -169,3 +169,33 @@ document.addEventListener("DOMContentLoaded", function() {
      }
    });
  });
+
+
+ ///////////////////////////////
+
+
+ // Get the form element
+const form = document.getElementById('stock-item-form');
+
+// Add event listener to the form submit button
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Create a new FormData object
+  const formData = new FormData(form);
+
+  // Access the form data using the input field names
+  const itemName = formData.get('item-name');
+  const quantity = formData.get('quantity');
+  const price = formData.get('price');
+
+  // Do something with the form data
+  console.log('Item Name:', itemName);
+  console.log('Quantity:', quantity);
+  console.log('Price:', price);
+
+  // Clear the form fields
+  form.reset();
+});
+
+

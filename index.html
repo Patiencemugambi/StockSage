@@ -63,23 +63,23 @@
     </div>
 
 
-<!-- add Stock Item -->
-    <div id="add-stock-item">
-        <h3>Add Stock Item</h3>
-        <form action="/add-stock-item" method="post">
-          <div class="form-group">
-            <input type="text" class="form-control" id="item-name" name="item-name" placeholder="Enter Item Name"><br>
-          </div>
-          <div class="form-group">
-            <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter Quantity"><br>
-          </div>
-          <div class="form-group">
-            <input type="number" class="form-control" id="price" name="price" placeholder="Enter Price"><br>
-          </div>
-          <button type="submit" class="btn btn-primary">Add Stock Item</button>
-        </form>
+<!-- Add Stock Item -->
+<div id="add-stock-item">
+    <h3>Add Stock Item</h3>
+    <form id="stock-item-form">
+      <div class="form-group">
+        <input type="text" class="form-control" id="item-name" name="item-name" placeholder="Enter Item Name"><br>
       </div>
-          
+      <div class="form-group">
+        <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter Quantity"><br>
+      </div>
+      <div class="form-group">
+        <input type="number" class="form-control" id="price" name="price" placeholder="Enter Price"><br>
+      </div>
+      <button type="submit" class="btn btn-primary" id="add-stock-btn">Add Stock Item</button>
+    </form>
+  </div>
+  
 
 <!-- stock alerts -->
 
