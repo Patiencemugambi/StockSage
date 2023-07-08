@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
   const role = document.getElementById("role");
 
 
-// Get the user's name and role from the db.json server
+  // Get the user's name and role from the server
 
   function retrieveUserDetails(email) {
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "/db.json?email=" + email);
+    xhr.open("GET", "https://fake-server-jhcl.onrender.com/db?email=" + email);
     xhr.onload = function() {
       if (xhr.status === 200) {
         const user = JSON.parse(xhr.responseText);
@@ -50,14 +50,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
-// ***Fetch
-
-
 document.addEventListener("DOMContentLoaded", function() {
-  fetch("db.json")
+  fetch("https://fake-server-jhcl.onrender.com/db")
     .then(response => response.json())
     .then(data => {
       var stockItems = data.stockItems;
@@ -74,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
           <td>${quantity}</td>
           <td>${price}</td>
           <td>
-          <button onclick="editItem('${itemName}')">Edit</button>
+            <button onclick="editItem('${itemName}')">Edit</button>
             <button onclick="deleteItem('${itemName}')">Delete</button>
           </td>
         `;
@@ -86,37 +80,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   fetch("db.json")
-//     .then(response => response.json())
-//     .then(data => {
-//       var stockAlerts = data.stock_alerts;
-
-//       // Loop through the stock alerts and append them to the table
-//       stockAlerts.forEach(function(alert) {
-//         var itemName = alert.item_name;
-//         var quantity = alert.quantity;
-//         var alertType = alert.alert_type;
-
-//         var row = document.createElement("tr");
-//         row.innerHTML = `
-//           <td>${itemName}</td>
-//           <td>${quantity}</td>
-//           <td>${alertType}</td>
-//         `;
-
-//         document.getElementById("stock-alerts-table").getElementsByTagName("tbody")[0].appendChild(row);
-//       });
-//     })
-//     .catch(error => console.error(error));
-// });
-
-
-
-
-//
 document.addEventListener("DOMContentLoaded", function() {
-  fetch("db.json")
+  fetch("https://fake-server-jhcl.onrender.com/db")
     .then(response => response.json())
     .then(data => {
       var stockItems = data.stockItems;
@@ -146,35 +111,28 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Get the search input element
+const searchBar = document.getElementById('search-bar');
+
+// Add event listener for input changes
+searchBar.addEventListener('input', function() {
+  const searchTerm = searchBar.value.toLowerCase();
+  const rows = document.querySelectorAll('#manage-stock-items-table tbody tr');
+
+  rows.forEach(function(row) {
+    const itemName = row.querySelector('td:first-child').textContent.toLowerCase();
+
+    // Show/hide rows based on the search term
+    if (itemName.includes(searchTerm)) {
+      row.style.display = '';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+});
 
 
-///////
-
- // Get the search input element
- const searchBar = document.getElementById('search-bar');
-  
- // Add event listener for input changes
- searchBar.addEventListener('input', function() {
-   const searchTerm = searchBar.value.toLowerCase();
-   const rows = document.querySelectorAll('#manage-stock-items-table tbody tr');
-   
-   rows.forEach(function(row) {
-     const itemName = row.querySelector('td:first-child').textContent.toLowerCase();
-     
-     // Show/hide rows based on the search term
-     if (itemName.includes(searchTerm)) {
-       row.style.display = '';
-     } else {
-       row.style.display = 'none';
-     }
-   });
- });
-
-
- ///////////////////////////////
-
-
- // Get the form element
+// Get the form element
 const form = document.getElementById('stock-item-form');
 
 form.addEventListener('submit', function(event) {
@@ -195,7 +153,3 @@ form.addEventListener('submit', function(event) {
 
   form.reset();
 });
-
-
-
-

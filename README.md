@@ -14,3 +14,48 @@ This project is licensed under the [MIT License](LICENSE). See the LICENSE file 
 
 ## Author's Info
 - LinkedIn: [Patience Mugambi](https://www.linkedin.com/feed/)
+
+## JSON Server
+This project utilizes a JSON server hosted at `https://fake-server-jhcl.onrender.com/` to simulate an API for managing stock items. The JSON server provides endpoints for retrieving, creating, updating, and deleting stock items.
+
+### Available Endpoints
+- `GET /stockitems`: Retrieves a list of all stock items.
+- `GET /stockitems/{id}`: Retrieves the details of a specific stock item with the given `id`.
+- `POST /stockitems`: Creates a new stock item.
+- `PUT /stockitems/{id}`: Updates the details of a specific stock item with the given `id`.
+- `DELETE /stockitems/{id}`: Deletes the stock item with the given `id`.
+
+Please refer to the [JSON server documentation](https://github.com/typicode/json-server) for more information on how to interact with the API.
+
+### Example Requests
+Here are some example requests using the JSON server:
+
+```bash
+# Retrieve all stock items
+GET https://fake-server-jhcl.onrender.com/stockitems
+
+# Retrieve a specific stock item with id 1
+GET https://fake-server-jhcl.onrender.com/stockitems/1
+
+# Create a new stock item
+POST https://fake-server-jhcl.onrender.com/stockitems
+Body:
+{
+  "name": "New Item",
+  "description": "This is a new stock item",
+  "quantity": 10,
+  "category": "Electronics"
+}
+
+# Update the details of stock item with id 2
+PUT https://fake-server-jhcl.onrender.com/stockitems/2
+Body:
+{
+  "name": "Updated Item",
+  "description": "This is an updated stock item",
+  "quantity": 5,
+  "category": "Books"
+}
+
+# Delete the stock item with id 3
+DELETE https://fake-server-jhcl.onrender.com/stockitems/3
