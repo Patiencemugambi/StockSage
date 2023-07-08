@@ -1,3 +1,48 @@
+// const signupForm = document.getElementById('signup-form');
+
+// signupForm.addEventListener('submit', function(event) {
+//   event.preventDefault();
+
+//   const fullName = document.getElementById('name').value;
+//   const email = document.getElementById('email').value;
+//   const password = document.getElementById('password').value;
+//   const confirmPassword = document.getElementById('confirm-password').value;
+
+//   if (password !== confirmPassword) {
+//     alert('Passwords do not match.');
+//     return;
+//   }
+
+//   // Create an object representing the new user
+//   const newUser = {
+//     fullName: fullName,
+//     email: email,
+//     password: password
+//   };
+
+//   // Perform signup logic here
+//   fetch('/api/signup', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(newUser)
+//   })
+//   .then(response => {
+//     if (response.ok) {
+//       alert('Account created successfully!');
+//       signupForm.reset();
+//       window.location.href = 'index.html'; // Redirect to index.html after successful signup
+//     } else {
+//       alert('Failed to create an account. Please try again.');
+//     }
+//   })
+//   .catch(error => {
+//     console.error('Error:', error);
+//   });
+// });
+
+
 const signupForm = document.getElementById('signup-form');
 
 signupForm.addEventListener('submit', function(event) {
@@ -13,9 +58,29 @@ signupForm.addEventListener('submit', function(event) {
     return;
   }
 
-  // Perform authentication or signup logic here
-  // You can send the form data to a server for verification
+  // Create an object representing the new user
+  const newUser = {
+    fullName: fullName,
+    email: email,
+    password: password
+  };
 
+  // Save the new user data to localStorage
+  saveUser(newUser);
+
+  alert('Account created successfully!');
   signupForm.reset();
   window.location.href = 'index.html'; // Redirect to index.html after successful signup
 });
+
+function saveUser(user) {
+  let users = [];
+  if (localStorage.getItem('users')) {
+    users = JSON.parse(localStorage.getItem('users'));
+  }
+
+  users.push(user);
+
+  localStorage.setItem('users', JSON.stringify(users));
+}
+
