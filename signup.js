@@ -79,6 +79,27 @@ function saveUser(user) {
     users = JSON.parse(localStorage.getItem('users'));
   }
 
+const xhr = new XMLHttpRequest();
+const url = 'https://fake-server-jhcl.onrender.com/users/' ;
+
+
+xhr.open('POST', url, true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+
+xhr.onreadystatechange = function() {
+  if (xhr.readyState === XMLHttpRequest.DONE) {
+    if (xhr.status === 200) {
+      // Request succeeded
+      console.log(xhr.responseText);
+    } else {
+      // Request failed
+      console.error('Request failed');
+    }
+  }
+};
+
+xhr.send(JSON.stringify(user));
+
   users.push(user);
 
   localStorage.setItem('users', JSON.stringify(users));

@@ -343,7 +343,7 @@ h3{
 
 
 .homepagebody{
-    margin-top: 40px;
+    margin-top: 190px;
     text-align: center;
     margin-left: 350px;
     /* margin-right: 80px; */
@@ -399,6 +399,10 @@ h3{
 
   }
 
+  #add-stock-item{
+    margin-top: 120px;
+  }
+
   #add-stock-item button{
     width: 400px;
     height: 45px;
@@ -425,13 +429,20 @@ h3{
   }
 
 
+  #add-stock-item h2{
+    font-size: var(--fs-500);
+    font-weight: var(--fw--light);
+    margin-top: 0;
+    color: rgb(121, 116, 116);
+  }
+
 
 /* *** */
 #stock-alerts {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 60px;
+    margin-top: 120px;
   }
   
   #stock-alerts h2 {
@@ -440,6 +451,8 @@ h3{
     margin-top: 0;
     color: rgb(121, 116, 116);
   }
+
+
   
   #stock-alerts table {
     width: 100%;
@@ -467,5 +480,13 @@ h3{
   
 
   
-  /* *** */
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ***********************************/
   
