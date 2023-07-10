@@ -10,7 +10,7 @@ StockSage is a web-based application developed to address the challenges busines
 
 
 ## JSON Server
-This project utilizes a JSON server hosted at (https://fake-server-jhcl.onrender.com/) to simulate an API for managing stock items. The JSON server provides endpoints for retrieving, creating, updating, and deleting stock items.
+This project utilizes a JSON server hosted at https://fake-server-jhcl.onrender.com/ to simulate an API for managing stock items. The JSON server provides endpoints for retrieving, creating, updating, and deleting stock items.
 
 Please refer to the [JSON server documentation](https://github.com/typicode/json-server) for information on how to interact with the API.
 
