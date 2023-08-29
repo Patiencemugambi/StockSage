@@ -20,4 +20,4 @@ Please refer to the [JSON server documentation](https://github.com/typicode/json
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
 
 ## Author's Info
-- LinkedIn: [Patience Mugambi](https://www.linkedin.com/feed/)
+- LinkedIn: [Patience Mugambi](http://www.linkedin.com/in/patience-mugambi-7621b5249)
